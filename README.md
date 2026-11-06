@@ -1,8 +1,24 @@
-# ML Challenge 2026 Problem Statement
+# 🏢 ML Challenge 2026 — Business Entity Resolution
 
-## Repository contents
+> **Machine learning pipeline for resolving business entity matches across three noisy data sources using embedding-based matching and reranking.**
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+---
+
+## 📋 Executive Summary
+
+This repository contains the solution to the **Amazon ML Challenge 2026** — a Business Entity Resolution problem. The pipeline matches business records from three independent data sources (S1, S2, S3) using embedding-based similarity and reranking, handling noisy fields including name variations, address inconsistencies, and cross-country entity matching.
+
+---
+
+## 📁 Repository Contents
 
 The source code, documentation, lightweight validation report, and reproducibility metadata are tracked here. The raw `dataset/` files, generated `artifacts/`, SQLite indexes, logs, and final run outputs are intentionally excluded by `.gitignore`; provide the challenge data separately before running the pipeline.
+
+GitHub Actions runs the Python smoke/schema checks in `.github/workflows/ci.yml` for every pushed branch/tag and for pull requests from any branch. The raw `dataset/` files, generated `artifacts/`, SQLite indexes, logs, and final run outputs are intentionally excluded by `.gitignore`; provide the challenge data separately before running the pipeline.
 
 GitHub Actions runs the Python smoke/schema checks in `.github/workflows/ci.yml` for every pushed branch/tag and for pull requests from any branch.
 
